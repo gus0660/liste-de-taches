@@ -13,3 +13,4 @@ addTask.addEventListener("click", () => {
   let valeur = newTask.value;
   console.log(valeur); // consultation de la "newTask.value"
 });
+// ok quand on remplis "newTask" et qu'on fait "ajouter" il faut générer une "li"
