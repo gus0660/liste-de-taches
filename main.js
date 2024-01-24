@@ -7,9 +7,9 @@ const taskApp = craiVar("#taskApp");
 const newTask = craiVar("#newTask");
 const addTask = craiVar("#addTask");
 const tasksList = craiVar("#tasksList");
-
+// il faut : créé une détection du click sur "ajouter" donc "addEventListener" sur "addTask"
 addTask.addEventListener("click",() => {
-    // console.log("YOUPY!!")
+    // qui génère une variable "valeur" qui correspont à la "value" de "newTask"
     let valeur = newTask.value;
-    console.log(valeur)
+    console.log(valeur)// consultation de la "newTask.value"
 });
