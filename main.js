@@ -11,7 +11,7 @@ addTask.addEventListener("click", () => {
   let valeur = newTask.value; // qui génère une variable "valeur" qui correspont à la "value" de "newTask"
 // et une condition "if" car il nous faut une interrogation : si on rentre des characteres alors le reste des fonctions se mettent en marche.
   if (isNaN(newTask.value) == true) {// si la valeur "value" de "newTask" est "isNaN" (c'est not a number) et qui renvoie "true" alors :
-    let newLi = document.createElement("li");
+    let newLi = document.createElement("li");//je génère une variable "newLi" en créant un element "li" (balise html)
     newLi.textContent = valeur;
     newLi.id = "boite";
     tasksList.appendChild(newLi);
