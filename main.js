@@ -19,7 +19,7 @@ addTask.addEventListener("click", () => {
     let supr = document.createElement("button");// je cré une variable "supr" qui cré un element "button" (balise html)
     supr.textContent = "suprimer";// je le remplis "textContent" avec les characteres : "suprimer"
     supr.id = "suprim";// au passage je lui donne un id pour pouvoir le reprendre en css
-    newLi.appendChild(supr);
+    newLi.appendChild(supr);// et je le rattache (appendChild) à son parent "newLi"
     
     newTask.value = "";
     supr.addEventListener("click", () => {
