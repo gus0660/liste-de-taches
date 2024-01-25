@@ -18,7 +18,7 @@ addTask.addEventListener("click", () => {
 // ok je peux créer un bouton "suprimer" pour faire disparaitre chaque "newLi" ainsi généré
     let supr = document.createElement("button");// je cré une variable "supr" qui cré un element "button" (balise html)
     supr.textContent = "suprimer";// je le remplis "textContent" avec les characteres : "suprimer"
-    supr.id = "suprim";
+    supr.id = "suprim";// au passage je lui donne un id pour pouvoir le reprendre en css
     newLi.appendChild(supr);
     
     newTask.value = "";
