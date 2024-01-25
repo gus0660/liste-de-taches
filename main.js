@@ -17,7 +17,7 @@ addTask.addEventListener("click", () => {
     tasksList.appendChild(newLi);//je fait de "newLi" l'enfant de "tasksList" pour rattacher la "li" au "ul"
 // ok je peux créer un bouton "suprimer" pour faire disparaitre chaque "newLi" ainsi généré
     let supr = document.createElement("button");// je cré une variable "supr" qui cré un element "button" (balise html)
-    supr.textContent = "suprimer";
+    supr.textContent = "suprimer";// je le remplis "textContent" avec les characteres : "suprimer"
     supr.id = "suprim";
     newLi.appendChild(supr);
     
