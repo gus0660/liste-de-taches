@@ -1,3 +1,5 @@
+
+// creation d'une fonction pour remplacer "document.querySelector()", il faudra juste remplacer "element" par l'id convoité.
 function créerBalise(element) {
   return document.querySelector(element);
 };
