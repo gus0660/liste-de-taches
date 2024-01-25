@@ -15,7 +15,7 @@ addTask.addEventListener("click", () => {
     newLi.textContent = valeur;// je la remplis (textContent) avec la let "valeur" (texte saisi)
     newLi.id = "boite";// au passage je lui donne un id pour pouvoir l'habiller avec du css
     tasksList.appendChild(newLi);//je fait de "newLi" l'enfant de "tasksList" pour rattacher la "li" au "ul"
-// 
+// ok je peux créer un bouton "suprimer" pour faire disparaitre chaque "newLi" ainsi généré
     let supr = document.createElement("button");
     supr.textContent = "suprimer";
     supr.id = "suprim";
