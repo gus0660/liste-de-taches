@@ -1,6 +1,6 @@
 function créerBalise(element) {
   return document.querySelector(element);
-}
+};
 
 
 function nouvTache() {
@@ -8,14 +8,15 @@ function nouvTache() {
 
   if (isNaN(newTask.value) == true) {
     let newLi = document.createElement("li");
-    newLi.innerHTML = valeur;
+    newLi.textContent = valeur;
     newLi.id = "boite";
     tasksList.appendChild(newLi);
 
     let supr = document.createElement("button");
     supr.textContent = "suprimer";
+    supr.id = "suprim";
     newLi.appendChild(supr);
-
+    
     newTask.value = "";
     supr.addEventListener("click", () => {
       newLi.remove(supr);
