@@ -21,7 +21,7 @@ addTask.addEventListener("click", () => {
     supr.id = "suprim";// au passage je lui donne un id pour pouvoir le reprendre en css
     newLi.appendChild(supr);// et je le rattache (appendChild) à son parent "newLi"
     
-    newTask.value = "";
+    newTask.value = "";// petite fonction pour remplacer ce qui a été rentré dans le input "newTask" par du vide : "" avant de cliquer sur le bouton "suprimer"
     supr.addEventListener("click", () => {
       newLi.remove(supr);
       
