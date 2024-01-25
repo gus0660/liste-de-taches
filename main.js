@@ -1,15 +1,12 @@
-
 // creation d'une fonction pour remplacer "document.querySelector()", il faudra juste remplacer "element" par l'id convoité.
 function créerBalise(element) {
   return document.querySelector(element);
 };
-
-
 //creation des constantes avec la fonction c-dessus : 
 const newTask = créerBalise("#newTask");
 const addTask = créerBalise("#addTask");
 const tasksList = créerBalise("#tasksList");
-// pour commencer il faut : créé une détection du click sur "ajouter" donc "addEventListener" sur "addTask"
+// pour commencer il faut : créé une détection du click sur "ajouter" donc "addEventListener" sur "addTask" nous donne un évenement "click" et la fonction qui en découle.
 addTask.addEventListener("click", () => {
   let valeur = newTask.value; // qui génère une variable "valeur" qui correspont à la "value" de "newTask"
 
