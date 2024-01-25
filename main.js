@@ -2,7 +2,8 @@ function créerBalise(element) {
   return document.querySelector(element);
 };
 
-// creation des constantes avec la fonction ci-dessus : const taskApp = créerBalise("#taskApp");
+
+//creation des constantes avec la fonction c-dessus : 
 const newTask = créerBalise("#newTask");
 const addTask = créerBalise("#addTask");
 const tasksList = créerBalise("#tasksList");
