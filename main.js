@@ -9,8 +9,8 @@ const tasksList = créerBalise("#tasksList");
 // pour commencer il faut : créé une détection du click sur "ajouter" donc "addEventListener" sur "addTask" nous donne un évenement "click" et la fonction qui en découle.
 addTask.addEventListener("click", () => {
   let valeur = newTask.value; // qui génère une variable "valeur" qui correspont à la "value" de "newTask"
-
-  if (isNaN(newTask.value) == true) {
+// et une condition "if" car il nous faut une interrogation : si on rentre des characteres alors le reste des fonctions se mettent en marche.
+  if (isNaN(newTask.value) == true) {// si la valeur "value" de "newTask" est "isNaN" (c'est not a number) et qui renvoie "true" alors :
     let newLi = document.createElement("li");
     newLi.textContent = valeur;
     newLi.id = "boite";
