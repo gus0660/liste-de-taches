@@ -26,10 +26,12 @@ addTask.addEventListener("click", () => {
     newTask.value = "";// petite fonction pour remplacer ce qui a été rentré dans le input "newTask" par du vide : "" avant de cliquer sur le bouton "suprimer"
     supr.addEventListener("click", () => {//evenement "addEventListener" sur le bouton "supr" pour faire marcher la petite fonction :
       newLi.remove(supr);// fonction pour "remove" la "newLi"
-      
     });
-    
   }
 });
 
-
+// je commence le "localStorage" par la fonction "saveLi" que je dois appeler à la fin de l'addEventListener de addTask (addTask.addEventListener)
+      function saveLi() {
+        const textlList = []; // créations d'une constante "tablList" qui est un tableau : [] vide
+        const meslists = document.querySelectorAll("li");
+      }
