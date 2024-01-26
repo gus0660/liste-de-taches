@@ -37,4 +37,9 @@ addTask.addEventListener("click", () => {
       function saveLi() {
         const textlList = []; // créations d'une constante "tablList" qui est un tableau : [] vide
         const meslists = document.querySelectorAll("li");// creation d'une constante qui, sur le DOM(document) va prendre tout(all) les "li"
+
+        // le paquet de "li" donc "mesLists"est un tableau qu'il fau décomposer pour avoir accés à chaques élement donc on utilise "forEach"
+        meslists.forEach("item", () => {// je décompose "mesLists" avec "forEach"ce qui nous donne des elements nommés "item" sur lesquels on fait les opérations suivantes
+          
+        })
       }
