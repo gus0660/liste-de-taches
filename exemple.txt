@@ -1,0 +1,32 @@
+const but = document.querySelector('#add');
+const list = document.querySelector('#listTak');
+const inp = document.querySelector('#task');
+
+
+but.addEventListener('click', () => {
+    let content = inp.value; 
+    let liEl = document.createElement('li');
+    liEl.textContent = content;
+    list.appendChild(liEl);
+    saveLi();
+})
+
+function saveLi(){
+    const textsList = [];
+    const lists = document.querySelectorAll('li');
+    lists.forEach((tache) => {
+        let text = tache.textContent;
+        textsList.push(text);
+    })
+    localStorage.setItem('list', JSON.stringify(textsList));
+    console.log(JSON.stringify(textsList));
+}
+ function loadLi(){
+    let obj = JSON.parse(localStorage.getItem('list'));
+    obj.forEach(element => {
+        let liEl = document.createElement('li');
+        liEl.textContent = element;
+        list.appendChild(liEl);
+    })
+ }
+ loadLi();
