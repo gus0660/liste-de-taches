@@ -40,6 +40,7 @@ addTask.addEventListener("click", () => {
 
         // le paquet de "li" donc "mesLists"est un tableau qu'il fau décomposer pour avoir accés à chaques élement donc on utilise "forEach"
         meslists.forEach("item", () => {// je décompose "mesLists" avec "forEach"ce qui nous donne des elements nommés "item" sur lesquels on fait les opérations suivantes
+          let text = item.textContent;// je cré une variable "text" égale au texte que chaque element(item) contient (textContent)
           
         })
       }
