@@ -35,14 +35,16 @@ addTask.addEventListener("click", () => {
 
 // pour sauvegarder les "newLi" je commence le "localStorage" par la fonction "saveLi" que je dois appeler à la fin de l'addEventListener de addTask (addTask.addEventListener)
       function saveLi() {
-        const textlList = []; // créations d'une constante "tablList" qui est un tableau : [] vide
+        const textsList = []; // créations d'une constante "tablList" qui est un tableau : [] vide
         const meslists = document.querySelectorAll("li");// creation d'une constante qui, sur le DOM(document) va prendre tout(all) les "li"
 
         // le paquet de "li" donc "mesLists"est un tableau qu'il fau décomposer pour avoir accés à chaques élement donc on utilise "forEach"
         meslists.forEach("item", () => {// je décompose "mesLists" avec "forEach"ce qui nous donne des elements que j'ai décidé de nommer "item" sur lesquels on fait les opérations suivantes
           let text = item.textContent;// je cré une variable "text" égale au texte que chaque element(item) contient (textContent)
-          textlList.push(text)// dans ma variable tableau "textList" je pousse(push) les variables de texte "text"
+          textsList.push(text)// dans ma variable tableau "textList" je pousse(push) les variables de texte "text"
           // j'ai donc une variable "textList" qui est un tableau(groupe) constitué de plusieurs elements qui sont des variables "text" remplis de chaque texte de "newLi"
         })
+        // je met en place la propriété "localStorage" qui prend un objet (textsList), le convertit en une chaîne de caractères JSON et le sauvegarde sous la clé 'list' dans le stockage local du navigateur.
+        //  donc je met "setItem" DANS le stockage local de mon navigateur "localStorage" la clé "list" qui contient la variable "textList" convertie en une chaîne de caractères JSON "JSON.stringify"
         localStorage.setItem('list', JSON.stringify(textsList));
       }
