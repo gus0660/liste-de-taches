@@ -47,4 +47,5 @@ addTask.addEventListener("click", () => {
         // je met en place la propriété "localStorage" qui prend un objet (textsList), le convertit en une chaîne de caractères JSON et le sauvegarde sous la clé 'list' dans le stockage local du navigateur.
         //  donc je met "setItem" DANS le stockage local de mon navigateur "localStorage" la clé "list" qui contient la variable "textList" convertie en une chaîne de caractères JSON "JSON.stringify"
         localStorage.setItem('list', JSON.stringify(textsList));
+        console.log(JSON.stringify(textsList));
       }
